@@ -14,6 +14,9 @@ app.use(express.json());
 
 connectDB();
 
+// middleware to parse JSON request bodies
+app.use(express.json());
+
 // Mount the notes router
 app.use("/api/notes", notesRoutes);
 
