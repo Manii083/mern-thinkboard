@@ -5,7 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url"; // Fix __dirname for ES modules
 import notesRoutes from "./Routes/notesRoutes.js";
 import { connectDB } from "./config/db.js";
-import rateLimiter from "./middlewares/ratelimitter.js";
+import rateLimiter from "./middlewares/rateLimiter.js";
 
 dotenv.config();
 
