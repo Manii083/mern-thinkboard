@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: mern-thinkboard
+    env: node
+    rootDir: Backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://manideepkatkam83_db_user:1yQZgTEBU5SOIqvP@cluster0.ymnv1uh.mongodb.net/notes_db?retryWrites=true&w=majority&appName=Cluster0
+      - key: PORT
+        value: 5002
+      - key: UPSTASH_REDIS_REST_URL
+        value: https://moved-oyster-46560.upstash.io
+      - key: UPSTASH_REDIS_REST_TOKEN
+        value: AbXgAAIncDFlMTk0YWRjZDdmOTk0ODcwYmU5OTc2YTY2MTljNjc5ZHAxNDY1NjA
+      - key: NODE_ENV
+        value: production
